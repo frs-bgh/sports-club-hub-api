@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sports Club Hub API - Documentation</title>
+</head>
+<body>
+  <h1>Sports Club Hub API</h1>
+  <p>Node.js 20 + Express + SQLite (Prisma)</p>
+
+  <h2>Base URL</h2>
+  <p>/api</p>
+
+  <h2>Health</h2>
+  <ul>
+    <li>GET /api/health</li>
+  </ul>
+
+  <h2>Members (CRUD)</h2>
+  <ul>
+    <li>GET /api/members?limit=10&offset=0</li>
+    <li>GET /api/members?search=fariss</li>
+    <li>GET /api/members/:id</li>
+    <li>POST /api/members</li>
+    <li>PUT /api/members/:id</li>
+    <li>DELETE /api/members/:id</li>
+  </ul>
+
+  <h2>News (CRUD)</h2>
+  <ul>
+    <li>GET /api/news?limit=10&offset=0</li>
+    <li>GET /api/news?search=club</li>
+    <li>GET /api/news/:id</li>
+    <li>POST /api/news</li>
+    <li>PUT /api/news/:id</li>
+    <li>DELETE /api/news/:id</li>
+  </ul>
+
+  <h2>Example</h2>
+  <pre>
+POST /api/members
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "age": 22,
+  "membershipNumber": 2001
+}
+  </pre>
+</body>
+</html>
